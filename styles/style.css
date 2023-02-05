@@ -10,9 +10,6 @@
     
 
     --fuentePrincipal: 'Poppins', sans-serif;
-    
-
-    
 
 }
 
@@ -99,13 +96,32 @@ form {
 }
 
 
-
-
-
 .form-group {
     margin: 0 auto 1.25rem auto;
     padding: 0.25rem;
 }
+
+label {
+    display: flex;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+span {
+    font-size: 1.6rem;
+    font-weight: lighter;
+    margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+    label {
+        font-size: 3;
+    }
+}
+
 
 .form-control {
     display: block;
@@ -117,18 +133,30 @@ form {
     color: var(--gris);
 }
 
-
-label {
+.input-radio {
     display: flex;
-    font-size: 2rem;
-    margin-bottom: 1rem;
     align-items: center;
-    justify-content: flex-start;
-    
+    margin: 1rem 0;
+
 }
 
-@media (min-width: 768px) {
-    label {
-        font-size: 3;
-    }
+.input-label {
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+.input-textarea {
+    width: 100%;
+    min-height: 12rem;
+    padding: 1.5rem;
+    resize: vertical;
+}
+
+.form-submit {
+    display: block;
+    width: 100%;
+    height: 5rem;
+    color: var(--blanco);
+    background-color: var(--secundario);
+    cursor: pointer;
 }
