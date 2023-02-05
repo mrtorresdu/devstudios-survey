@@ -17,8 +17,8 @@
     
 <div class="container">
     <header>
-        <h1 id="title">DevStudio | Survey Form</h1>
-        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <h1 id="title">DevStudio <span>Survey Form</span></h1>
+        <p id="description" class="description">Thank you for taking the time to help us improve the platform</p>
     </header>
 
     <form autocomplete="on" id="survey-form">
@@ -34,13 +34,13 @@
             </div>
 
             <div class="form-group">
-                <label id="number-label" for="number">Age<span>(optional)</span></label>
+                <label id="number-label" for="number">Age<span class="minSpan">(optional)</span></label>
                 <input id="number" type="number" name="age" min="18" max="120" class="form-control" placeholder="Age">
             </div>
         
 
         <div class="form-group">
-            <p>Which option best describes your current role?</p>
+            <p class="subtitle">Which option best describes your current role?</p>
             <select id="dropdown" name="dropdown" class="form-control" required>
                 <option disabled selected value >Select Current Role</option>
                 <option value="student">Student</option>
@@ -52,7 +52,7 @@
         </div>
 
         <div class="form-group">
-            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <p class="subtitle">Would you recommend freeCodeCamp to a friend?</p>
             
             <div class="input-radio">
                 <input id="definitely" type="radio" name="referred" value="definitely" required/>
@@ -70,7 +70,7 @@
             </div>
 
         <div class="form-group">
-            <p>What is your favorite feature of DevStudio?</p>
+            <p class="subtitle">What is your favorite feature of DevStudio?</p>
             <select name="most-like" id="most-like" class="form-control">
                 <option disabled selected value>Select an option</option>
                 <option value="challenges">Challenges</option>
@@ -82,7 +82,7 @@
 
 
         <div class="form-group">
-            <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+            <p class="subtitle">What would you like to see improved? <span class="minSpan">(Check all that apply)</span></p>
             
             <div class="input-radio">
                 <input id="front-end-projects" type="checkbox" value="front-end-projects"> 
@@ -142,7 +142,7 @@
         </div>
 
         <div class="form-group">
-            <p>Any comments or suggestions?</p>
+            <p class="subtitle">Any comments or suggestions?</p>
             <textarea name="comments" id="comments" class="input-textarea" cols="30" rows="10" placeholder="Enter your commet here..."></textarea>
         </div>
 
